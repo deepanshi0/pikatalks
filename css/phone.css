@@ -1,0 +1,57 @@
+#start{
+    flex-direction: column;
+    height: 126px;
+}
+#start li{
+    font-size: 1.4rem;
+}
+.buton{
+    position: absolute;
+    top: 6%;
+    right: 29%;
+    left: 34%;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 47px;
+    height: 49px;
+    margin: 3px 3px;
+
+}
+#btn1{
+      position: absolute;
+    right: 43%;
+    margin-top: -17px;
+}
+
+.container{
+    flex-direction: column;
+}
+#timedate{
+    padding-right: 6px
+}
+#btn{
+    display: none;
+}
+#sendsvg{
+    width: 45px;
+    height: 45px;
+border: 4px solid black;
+    border-radius: 23px;
+    display: inline-block;
+background-color: rgb(6, 6, 123);
+margin-left: 4px;
+}
+svg{
+    filter: invert(1);
+
+}
+.btn2{
+    font-size: 1rem;
+    width: 60%;   
+}
+.message{
+    width: 35%;
+}
