@@ -23,20 +23,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 <style>
+    
+ body { 
+    padding: 0px;
+    background-color: white;
+    color: white;
+    font-size: 25px;
+      }
+      
+.dark-mode {
+  background-color: rgb(6 36 59 / 85%);;
+    /* background-color: #3d3d3d; */
+    color: white;
+    } 
+  
     .container{
     margin: 38px auto;
     height: 77vh;
-    border: 5px solid black;
-    width: 88%;
+    border: 1px solid #aeb2b2;
+    width: 95%;
     padding: 1px;
     overflow-y: auto;
     border-radius: 13px;
     margin-bottom: 23px;
-    background: url(../bg5.jpg)no-repeat center center/cover;
+    background-color: #d8d8d8;
+    background: url(../background.jpg)no-repeat center center/cover;
     }
 /* dark theme chat bg */
   .bgchange {
-    background-image: url("bg2.jpg");
+    background-color: #3d3d3d;
+    background: url(../darkbg.jpg)no-repeat center center/cover;
+    border: 1px solid rgb(26, 25, 25)
   }
 
   .btn{
@@ -55,12 +72,14 @@
   background-color: rgb(6, 6, 123);
 }
   .btn:hover{
-  background-color:rgb(5 109 189);
+  background-color:rgb(14, 38, 57);
+  color: white;
 }
   .btn:active{
-  background-color: rgb(78, 9, 78);
+  background-color: rgb(60, 57, 60);
   box-shadow: 2px 2px black;
   transform: translateY(4px);
+  color: white;
 }
 /* dark theme send button */
   .bt {
@@ -76,13 +95,13 @@
 
   <nav class="start" id="start">
     <ul>
-      <li class="logo"><img src="logo.png" alt="PIKATALKS">PIKATALKS</li>
+      <li class="logo" id="logo"><img src="logo.png" alt="PIKATALKS">PIKATALKS</li>
       <li class="buton" id="quoteBtn1" onclick="getNewQuote()" >Quote Of The Day</button>
       </li>
       <li>
         <svg xmlns="http://www.w3.org/2000/svg" data-bs-toggle="tooltip" data-bs-placement="bottom"
         data-bs-custom-class="custom-tooltip" data-bs-title="Night Mode" width="23" height="23" fill="currentColor"
-        class="bi bi-moon-stars-fill" viewBox="0 0 16 16" id="btn1" onclick="darkMode()">
+        class="bi bi-moon-stars-fill" viewBox="0 0 16 16" id="btn1" class="btn1" onclick="darkMode()">
         <path
           d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
         <path
@@ -90,7 +109,7 @@
       </svg>
       
       </li>
-      <li id="timedate">
+      <li id="timedate" class="timedate">
           <a id="mon">January</a>
           <a id="d">1</a>,
           <a id="y">0</a><br />
@@ -107,8 +126,12 @@
       var element = document.body;
       document.getElementById('container').classList.toggle("bgchange");
       element.classList.toggle("dark-mode");
+      
       document.getElementById('start').classList.toggle("navi");
+      document.getElementById('logo').classList.toggle("lg");
+      document.getElementById('timedate').classList.toggle("ttt");
       document.getElementById('btn').classList.toggle("bt");
+      document.getElementById('btn1').classList.toggle("dd");
       document.getElementById('messageInp').classList.toggle("inp");
 
     }
@@ -151,7 +174,7 @@ document.getElementById('overlay').style.display="flex"
 <div id="overlay" style="display: none;" >    
   <div class="card" id="quotecard" style="width: 55%;border: 3px solid black;text-align: center;" >
       <img style="opacity:0.8 ;" src="https://source.unsplash.com/1600x900/?nature" class="card-img-top" alt="...">
-      <div class="card-body" style="background-color: #d98cb9;color: black;overflow-y: scroll;
+      <div class="card-body" style="background-color: #dfdede;color: black;overflow-y: scroll;
       max-height: 31vh;">
           <h3 class="card-title">Welcome!!!</h3>
           <p class="card-text" id="quote" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>

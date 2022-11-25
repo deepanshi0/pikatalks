@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -9,40 +9,25 @@
 html{
     scroll-behavior: smooth;
 }
-body { 
-    padding: 0px;
-    background-color:white;
-    color: white;
-    font-size: 25px;
-      }
-.dark-mode {
-    background-color: black;
-    color: white;
-    } 
+
 
 .start{
-      background-color: rgb(22 131 215);
+    background-color: rgb(202 197 197 / 49%);
       width: 100%;
       height: 75px;
       box-shadow: 19px 9px 8px grey;
 }
 .navi {
-    background-color: #010933;
+    background-color: rgb(26 27 27);
     padding: 0%;
     margin: 0%;
     height: 75px;
     box-shadow: none;
+    color: white;
+    box-shadow: 15px 4px 6px #0c0c0c;
   }
 
-#timedate {
-    font: small-caps lighter 23px / 106% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    text-align: right;
-    color: rgb(255, 255, 255);
-    border-right: 4px solid rgb(247, 147, 247);
-    padding: 17px;
-    position: absolute;
-    right: 5px;
-}
+
 a:hover{
 	text-decoration:none;
 }
@@ -82,21 +67,43 @@ nav ul li a:hover{
 .logo{
  display: flex;
     align-items: center;
-    font-size: 2.3rem;
-    color: white;
+    font-size: 1.9rem;
+    color:black;
     margin-left: -45px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Poppins', sans-serif;
 }
-
+.lg{
+    color: white;
+}
+.timedate {
+    font: small-caps lighter 23px / 106% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    text-align: right;
+    color: black;
+    border-right: 4px solid black;
+    padding: 17px;
+    position: absolute;
+    right: 5px;
+}
+.ttt{
+    color: white;
+    border-right: 4px solid white;
+}
 #btn1{
     position: absolute;
     right: 16%;
     margin-top: -7px;
+    color: black;
+}
+.dd{
+    position: absolute;
+    right: 16%;
+    margin-top: -7px;
+    color: white;
 }
 .buton{
     border: 3px solid midnightblue;
     border-radius: 37px;
-    background-color: #f0a1c8;
+    background-color: #fff8ea;
     font-size: 21px;
     color: #080849;
     font-family: 'Ubuntu', sans-serif;
@@ -107,11 +114,11 @@ nav ul li a:hover{
 }
 
 .buton:hover{
-    background-color:rgb(245 196 124);
+    background-color:rgb(198, 195, 190);
 }
 
 .buton:active{
-    background-color: rgb(254, 118, 254);
+    background-color: rgb(162, 157, 162);
     box-shadow: 2px 2px black;
     transform: translateY(4px);
     transition: 0.5s;
@@ -128,7 +135,7 @@ nav ul li a:hover{
 .left{
     float: left;
     clear: both;
-    background-color: rgb(49 56 56 / 82%);
+    background-color: rgb(118 118 118 / 82%);
     color: white;
     font-size: 20px;
     font-family: emoji;
@@ -138,7 +145,7 @@ nav ul li a:hover{
     float: right;
     clear: both;
     color: white;
-    background-color: #02645b;
+    background-color: #a887fc;
     font-size: 20px;
     font-family: emoji;
 }
@@ -164,7 +171,7 @@ nav ul li a:hover{
     height: 50px;
     padding: 9px;
     margin: -9px 0px;
-    background-color:bisque;
+    background-color: #ebe3d9;
 }
 
 
@@ -184,10 +191,10 @@ nav ul li a:hover{
   } 
 
 .btn2{
-    background-color: darkblue;
+    background-color: black;
     color: white;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid white;
     width: 26%;
     text-align: center;
     font-size: 21px;
@@ -195,11 +202,11 @@ nav ul li a:hover{
 }
 
 .btn2:hover{
-    background-color:rgb(5 109 189);
+    background-color:rgb(37, 42, 46);
 }
 
 .btn2:active{
-    background-color: rgb(78, 9, 78);
+    background-color: rgb(119, 118, 119);
     box-shadow: 2px 2px black;
     transform: translateY(4px);
 }
